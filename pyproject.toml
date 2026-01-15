@@ -1,0 +1,16 @@
+[project]
+name = "mcp-agentty"
+version = "0.1.0"
+description = "AgenTTY: A TTY client exposed as an MCP server"
+dependencies = [
+    "fastmcp",
+    "pexpect",
+]
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+agentty = "mcp_agentty.server:main"
