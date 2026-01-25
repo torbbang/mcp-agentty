@@ -1,4 +1,3 @@
-import pytest
 import time
 from mcp_agentty.session import SessionManager
 

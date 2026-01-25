@@ -1,7 +1,7 @@
 import asyncio
 import os
 from fastmcp import FastMCP
-from typing import Optional, List
+from typing import Optional
 from .session import SessionManager
 
 # Initialize FastMCP server and Session Manager

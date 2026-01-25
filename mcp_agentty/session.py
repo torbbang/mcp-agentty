@@ -3,7 +3,7 @@ import uuid
 import logging
 import re
 import atexit
-from typing import Dict, Optional, Tuple
+from typing import Dict, Optional
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -104,7 +104,6 @@ class SessionManager:
     def list_sessions(self) -> Dict[str, str]:
         """Returns a dict of id -> command string. Cleans up dead sessions."""
         active = {}
-        dead_ids = []
         for sid, s in self._sessions.items():
             if s.is_alive():
                 active[sid] = f"{s.command} {' '.join(s.args)}"
