@@ -1,3 +1,9 @@
+> [!IMPORTANT]
+> ## 🚚 This project has moved to [git.torbjorn.dev](https://git.torbjorn.dev/torbbang/mcp-agentty)
+> This GitHub repository is archived and no longer maintained.
+
+---
+
 # AgenTTY (mcp-agentty)
 
 An MCP server that exposes a TTY client. It allows you to run local shells, SSH, and Telnet sessions through MCP tools.
